@@ -14,7 +14,7 @@ public class BAI2 extends AppCompatActivity {
     private EditText edWidth,edLength;
 
 
-    public static final String SERVER_NAME = "http://192.168.0.108/luongviethoang_ph27356/rectangle_POST.php";
+    public static final String SERVER_NAME = "http://192.168.0.101/luongviethoang_ph27356/rectangle_POST.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

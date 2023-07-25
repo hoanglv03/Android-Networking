@@ -9,13 +9,15 @@ import android.widget.Button;
 
 
 public class ManHinhChinh extends AppCompatActivity {
-    Button btnBai1,btnBai2;
+    Button btnBai1,btnBai2,btnBai3,btnBai4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_man_hinh_chinh);
         btnBai1 = findViewById(R.id.btnBai1);
         btnBai2 = findViewById(R.id.btnBai2);
+        btnBai3 = findViewById(R.id.btnBai3);
+        btnBai4 = findViewById(R.id.btnBai4);
         btnBai1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,6 +29,20 @@ public class ManHinhChinh extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ManHinhChinh.this, BAI2.class);
+                startActivity(intent);
+            }
+        });
+        btnBai3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ManHinhChinh.this, BAI3.class);
+                startActivity(intent);
+            }
+        });
+        btnBai4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ManHinhChinh.this, Bai4.class);
                 startActivity(intent);
             }
         });
